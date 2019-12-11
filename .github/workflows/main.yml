@@ -16,4 +16,4 @@ jobs:
     - name: Verify host via SSH
       run: ssh-keyscan 163.172.130.135 >> ~/.ssh/known_hosts
     - name: Deploy Website
-      run: sshpas -p hetic scp -r /mnt/c/users/trouv/documents/projets-perso/projet-agence-de-voyage/* trouve-quentin@163.172.130.135:/home/trouve-quentin/Projet-Agence-de-Voyage
+      run: sshpass -p hetic scp -r * trouve-quentin@163.172.130.135:/home/trouve-quentin/Projet-Agence-de-Voyage
